@@ -1,3 +1,42 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+
+/*Couleurs principales*/
+
+@theme {
+  --color-ink: var(--ink);
+  --color-velvet: var(--velvet);
+  --color-copper: var(--copper);
+  --color-copperlight: var(--copperlight);
+  --color-copperpale: var(--copperpale);
+  --color-cream: var(--cream);
+  --color-stone: var(--stone);
+  --color-linen: var(--linen);
+  --color-warm: var(--warm);
+
+}
+
+:root {
+  --ink: #0F0E0C;
+  --velvet: #1C1916;
+  --copper: #C4853A;
+  --copperlight: #D9A05E;
+  --copperpale: #F0E0C8;
+  --cream: #EDE4D6;
+  --stone: #9A9187;
+  --linen: #FAF7F2;
+  --warm: #F2EDE5;
+}
+
+/*Variables de base*/
+
+@layer base {
+
+  body {
+    background-color: var(--linen);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+
+}
