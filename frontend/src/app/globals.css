@@ -37,6 +37,14 @@
     background-color: var(--linen);
     color: var(--ink);
     font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+
   }
 
 }
