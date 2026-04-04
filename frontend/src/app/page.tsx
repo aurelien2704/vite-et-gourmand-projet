@@ -1,3 +1,4 @@
+import KnowHowSection from "@/components/home/KnowHowSection";
 import MainSection from "@/components/home/MainSection";
 import PresentationSection from "@/components/home/PresentationSection";
 
@@ -10,6 +11,8 @@ export default function Home() {
       <MainSection />
       {/*Section présentation : histoire et promesse*/}
       <PresentationSection />
+      {/*Section savoir-faire : 5 arguments*/}
+      <KnowHowSection />
     </main>
   );
 }
