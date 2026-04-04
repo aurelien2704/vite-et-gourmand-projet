@@ -1,3 +1,4 @@
+import ClientsReviewSection from "@/components/home/ClientsReviewSection";
 import KnowHowSection from "@/components/home/KnowHowSection";
 import MainSection from "@/components/home/MainSection";
 import PresentationSection from "@/components/home/PresentationSection";
@@ -13,6 +14,8 @@ export default function Home() {
       <PresentationSection />
       {/*Section savoir-faire : 5 arguments*/}
       <KnowHowSection />
+      {/*Section avis clients*/}
+      <ClientsReviewSection />
     </main>
   );
 }
