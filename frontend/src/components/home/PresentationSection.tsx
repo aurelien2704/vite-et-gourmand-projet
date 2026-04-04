@@ -1,3 +1,5 @@
+import { Eyebrow } from "../common/Headings";
+
 const presentation: Record<string, string>[] = [
   {
     title: "Notre histoire",
@@ -23,12 +25,7 @@ export default function PresentationSection() {
         {presentation.map((pres) => (
           <div key={pres.title}
             className={`${pres.bg} px-10 lg:px-20 py-16 border-r border-cream`}>
-            <div className="flex items-center gap-3 mb-10">
-              <span className="inline-block w-8 h-px bg-copper" />
-              <span className="text-[12px] tracking-[4px] uppercase text-copper">
-                {pres.title}
-              </span>
-            </div>
+            <Eyebrow label={pres.title} />
 
             <div className="italic leading-[1.85]">
               <p className="py-4">{pres.text}</p>

@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+import CallToAction from "../common/CallToAction";
+import { Eyebrow, MainTitle } from "../common/Headings";
 
 //Statistiques page d'accueil
 const stats: { value: string; label: string }[] = [
@@ -20,16 +21,10 @@ export default function MainSection() {
         < div className="px-6 py-16 md:px-14 md:py-25" >
 
           {/*Slogan*/}
-          < div className="flex items-center gap-3 mb-4" >
-            <span className="inline-block w-8 h-px bg-copperlight" />
-            <span className="text-[12px] tracking-[4px] uppercase text-copperlight">Traiteur bordelais · 25 ans d'excellence</span>
-          </div >
+          <Eyebrow label="Traiteur bordelais · 25 ans d'excellence" />
 
           {/*Titre*/}
-          < h1 className="font-serif font-normal text-white leading-[1.05] mb-4" >
-            <span className="text-[48px] md:text-[68px] block">L'art de recevoir,</span>
-            <span className="text-[48px] md:text-[68px] text-copper block">à votre table</span>
-          </h1 >
+          <MainTitle title="L'art de recevoir" highlight=" à votre table" />
 
           {/*Séparateur*/}
           < div className="w-px h-10 bg-copper/40 my-6" />
@@ -40,12 +35,7 @@ export default function MainSection() {
           </p >
 
           {/*CTA*/}
-          <Link
-            href="/pages/page-nos-menus"
-            className="bg-copper text-ink px-10 py-4 text-[13px] tracking-[15%] uppercase font-bold
-                hover:bg-copperlight hover:scale-105 transition-transform duration-300 inline-block">
-            Découvrir nos menus
-          </Link>
+          <CallToAction href="/pages/page-nos-menus" label="Découvrir nos menus" />
         </div >
 
         {/*Colonne droite : Image*/}
