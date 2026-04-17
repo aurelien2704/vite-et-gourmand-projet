@@ -90,3 +90,18 @@ export const reviews: Record<string, string>[] = [
     date: "Mars 2026",
   },
 ];
+
+//Horaires d'ouverture
+export const schedule: { day: string; hours: string }[] = [
+  { day: "Mardi – Vendredi", hours: "9h – 19h" },
+  { day: "Samedi", hours: "9h – 17h" },
+  { day: "Dimanche", hours: "sur RDV" },
+];
+
+//Mentions légales, CGV, RGPD
+export const legal: { href: string; label: string }[] = [
+  { href: "#", label: "Mentions légales" },
+  { href: "#", label: "Conditions générales" },
+  { href: "#", label: "RGPD" },
+];
+
