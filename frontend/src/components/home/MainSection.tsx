@@ -1,14 +1,7 @@
+import { stats } from "@/data/static_data";
 import Image from "next/image";
 import CallToAction from "../common/CallToAction";
 import { Eyebrow, MainTitle } from "../common/Headings";
-
-//Statistiques page d'accueil
-const stats: { value: string; label: string }[] = [
-  { value: "25", label: "Années d'expertise" },
-  { value: "700+", label: "Événements réalisés" },
-  { value: "9", label: "Thèmes de menus" },
-  { value: "100%", label: "Fait maison" },
-]
 
 export default function MainSection() {
   return (
@@ -51,7 +44,7 @@ export default function MainSection() {
 
       {/*Section statistiques clées*/}
       <section>
-        {/*On récupère les statistiques avec .map*/}
+        {/*On récupère les statistiques avec .map dans le fichier@/data/static_data*/}
         <div className=" bg-velvet grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label} className="py-8 text-center border border-copper/15">

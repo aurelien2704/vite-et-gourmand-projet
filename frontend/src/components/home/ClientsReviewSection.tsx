@@ -1,28 +1,5 @@
+import { reviews } from "../../data/static_data";
 import { SectionTitle } from "../common/Headings";
-
-const reviews: Record<string, string>[] = [
-  {
-    author: "Marie D.",
-    note: "★★★★★",
-    comment: "Un repas de Noël mémorable. La qualité des produits et la présentation étaient irréprochables. Nos invités en parlent encore trois mois après.",
-    menu: "Menu Noël",
-    date: "Décembre 2025",
-  },
-  {
-    author: "Camille T.",
-    note: "★★★★★",
-    comment: "Le banquet de notre séminaire d'entreprise était très raffiné et le service impeccable.",
-    menu: "Menu Événement pro",
-    date: "Juin 2025",
-  },
-  {
-    author: "Frédéric L.",
-    note: "★★★★★",
-    comment: "L'expérience Vite & Gourmand pour l'anniversaire de mes 50 ans a été une réussite. Les plats et le gâteau étaient sublimes.",
-    menu: "Menu Anniversaire",
-    date: "Mars 2026",
-  },
-];
 
 export default function ClientsReviewSection() {
   return (
@@ -35,7 +12,7 @@ export default function ClientsReviewSection() {
           <div className="text-copper tracking-[2px] text-[13px]">★★★★★</div>
         </div>
 
-        {/* On récupère les données du tableau reviews avec .map */}
+        {/* On récupère les données du tableau reviews avec .map dans le fichier @/data/static_data */}
         <div className="grid grid-cols-1 md:grid-cols-3 my-10 gap-6">
           {reviews.map((r) => (
             <div

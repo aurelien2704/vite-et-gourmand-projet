@@ -1,17 +1,11 @@
 "use client"
 
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { nav } from "@/data/static_data";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-
-//Liens de navigation
-const nav: { href: string; label: string }[] = [
-  { href: "/", label: "Accueil" },
-  { href: "/pages/page-nos-menus", label: "Nos menus" },
-  { href: "/pages/page-contact", label: "Contact" },
-];
 
 //Logo
 function Logo() {
@@ -34,7 +28,7 @@ function NavigationLinks({ onNavigate }: { onNavigate?: () => void }) {
   const pathname = usePathname();
   return (
     <>
-      {/*On récupère les liens et labels de navigation avec .map*/}
+      {/*On récupère les liens et labels de navigation avec .map dans le fichier@/data/static_data*/}
       {/*On appelle la fonction onNavigate lors du clic sur un lien via onClick*/}
 
       {nav.map((navlink) => (

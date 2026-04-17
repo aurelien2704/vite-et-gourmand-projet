@@ -1,41 +1,6 @@
+import { args } from "../../data/static_data";
 import CallToAction from "../common/CallToAction";
 import { Eyebrow, SectionTitle } from "../common/Headings";
-
-//Arguments de qualité
-const args: Record<string, string>[] = [
-  {
-    num: "01",
-    icon: "🥩",
-    title: "Produits",
-    title2: "locaux",
-    description: "Chaque ingrédient est sélectionné auprès de producteurs bordelais.",
-    bg: "bg-white",
-  },
-  {
-    num: "02",
-    icon: "👨‍🍳",
-    title: "Préparation",
-    title2: "maison",
-    description: "Tout est préparé le jour même de la livraison. Aucun plat industriel, aucun sous-traitant.",
-    bg: "bg-linen",
-  },
-  {
-    num: "03",
-    icon: "🤝",
-    title: "Service",
-    title2: "personnalisé",
-    description: "Julie et José prennent le temps d'échanger avec chaque client pour adapter le menu à leurs envies.",
-    bg: "bg-linen",
-  },
-  {
-    num: "04",
-    icon: "🚚",
-    title: "Livraison",
-    title2: "soignée",
-    description: "Chaque commande est livrée à l'heure convenue, avec une présentation soignée.",
-    bg: "bg-white",
-  },
-];
 
 export default function KnowHowSection() {
   return (
@@ -49,7 +14,7 @@ export default function KnowHowSection() {
         </div>
 
         {/* Grid : 4 colonnes sur desktop, 2 sur tablette, 1 sur mobile */}
-        {/* On récupère les données de args avec .map */}
+        {/* On récupère les données de args avec .map dans le fichier @/data/static_data */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {args.map((arg) => (
             <div
@@ -80,8 +45,8 @@ export default function KnowHowSection() {
               <span className="italic text-copperlight">chaque occasion</span>
             </h3>
             <p className="text-white/80 italic leading-[1.5] pb-10">
-              <div className="pb-2">Noël, Pâques, mariage, anniversaire, Toussaint, événement professionnel.</div>
-              <div>9 menus pensés pour chaque occasion, avec des options classique, végétarien et vegan.</div>
+              <span className="pb-2">Noël, Pâques, mariage, anniversaire, Toussaint, événement professionnel.</span>
+              <span>9 menus pensés pour chaque occasion, avec des options classique, végétarien et vegan.</span>
             </p>
 
             {/* CTA */}
